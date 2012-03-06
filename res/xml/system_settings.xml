@@ -49,4 +49,9 @@
 	    android:icon="@drawable/ic_settings_halo"
             android:title="@string/halo_control_title" />
 
+    <PreferenceScreen
+        android:key="navigation_bar"
+        android:fragment="com.android.settings.cyanogenmod.NavBar"
+        android:title="@string/navigation_bar_title" />
+
 </PreferenceScreen>
