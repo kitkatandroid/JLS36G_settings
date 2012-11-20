@@ -4986,4 +4986,8 @@
     <string name="halo_msgbox_animation_summary">Halo message box animation for incoming notifications</string>
     <string name="halo_msgbox_animation_none">None</string>
     <string name="halo_msgbox_animation_flip">Flip</string>
+
+    <!-- Themes settings  -->
+    <string name="themes_settings_title">Themes</string>
+
 </resources>
