@@ -1584,6 +1584,10 @@
 
         <activity android:name=".cyanogenmod.SystemSettings" />
 
+        <activity android:name=".cyanogenmod.LockscreenTargets" />
+
+        <activity android:name=".cyanogenmod.LockscreenInterface" />
+
         <activity android:name=".cyanogenmod.QuickSettings" />
 
         <activity android:name=".cyanogenmod.PowerMenu" />
