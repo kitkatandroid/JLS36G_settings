@@ -49,8 +49,12 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
 
     private String mHelpUrl;
 
+<<<<<<< HEAD
     // Cache the content resolver for async callbacks
     private ContentResolver mContentResolver;
+=======
+    protected Context mContext;
+>>>>>>> 7a2761f... LCD Changer take 2
 
     @Override
     public void onCreate(Bundle icicle) {
