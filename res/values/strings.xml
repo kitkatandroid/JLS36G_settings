@@ -4865,10 +4865,8 @@
     <string name="lockscreen_vibrate_enabled_title">Vibrate</string> 
     <string name="lockscreen_vibrate_enabled_head">Vibrate when unlocking</string> 
 
-    <!-- Lock screen misc. settings -->
-    <string name="lockscreen_battery_status_title">Battery status</string>
-    <string name="lockscreen_battery_status_charging">Only when charging</string>
-    <string name="lockscreen_battery_status_alwayson">Always on</string>
+    <string name="lockscreen_maximize_widgets_title">Maximize widgets</string>
+    <string name="lockscreen_maximize_widgets_summary">Show widgets maximized and the unlock mimimized when the screen is turned on</string>
 
     <!-- **** PURITY ADDITIONS END **** -->
 
