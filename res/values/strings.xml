@@ -4542,5 +4542,20 @@
     <string name="build_date">NARP Build Date</string>
     <string name="build_date_default">2012-01-01-0000</string>
 
+    <!-- System Interface settings  -->
+    <string name="system_settings_title">System</string>
+    <string name="system_interface_title">System interface</string>
+
+    <!-- Power menu enable disable -->
+    <string name="power_menu_title">Power menu</string>
+    <string name="power_menu_reboot_title">Reboot menu</string>
+    <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_expanded_desktop">Expanded desktop</string>
+    <string name="power_menu_airplane_title">Airplane mode</string>
+    <string name="power_menu_silent_title">Sound panel</string>
+
+    <!-- Purity Category  -->
+    <string name="purity_category_title">Purity</string>
+
     <!-- **** PURITY ADDITIONS END **** -->
 </resources>
