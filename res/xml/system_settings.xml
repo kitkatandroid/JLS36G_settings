@@ -88,6 +88,11 @@
             android:icon="@drawable/ic_settings_nav_bar_ring"
             android:title="@string/navigation_ring_title" />
 
+	<Preference
+            android:key="custom_carrier_label"
+            android:title="@string/custom_carrier_label_title"
+	    android:summary="@string/custom_carrier_label_summary" />
+
     </PreferenceCategory>
 
     <PreferenceScreen
