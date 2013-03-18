@@ -20,8 +20,10 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
+import android.os.UserHandle;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.view.IWindowManager;
@@ -37,14 +39,36 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     private static final String KEY_NAVIGATION_BAR = "navigation_bar";
     private static final String KEY_NAV_BUTTONS_EDIT = "nav_buttons_edit";
     private static final String KEY_NAV_BUTTONS_HEIGHT = "nav_buttons_height";
+    private static final String KEY_PIE_CONTROL = "pie_control";
 
     private ListPreference mNavButtonsHeight;
+   
+    private PreferenceScreen mNotificationPulse;
+    private PreferenceScreen mBatteryPulse;
+    private PreferenceScreen mPieControl;
+    private boolean mIsPrimary;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system_settings);
+	PreferenceScreen prefScreen = getPreferenceScreen();
+
+	// Determine which user is logged in
+        mIsPrimary = UserHandle.myUserId() == UserHandle.USER_OWNER;
+        //if (mIsPrimary) {
+            // Primary user only preferences
+            // Battery lights
+            //mBatteryPulse = (PreferenceScreen) findPreference(KEY_BATTERY_LIGHT);
+            if (mBatteryPulse != null) {
+                if (getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveBatteryLed) == false) {
+                    prefScreen.removePreference(mBatteryPulse);
+                    mBatteryPulse = null;
+                }
+            }
+	//}
 
         mNavButtonsHeight = (ListPreference) findPreference(KEY_NAV_BUTTONS_HEIGHT);
         mNavButtonsHeight.setOnPreferenceChangeListener(this);
@@ -73,9 +97,63 @@ public class SystemSettings extends SettingsPreferenceFragment implements
         // Act on the above
         if (removeNavbar) {
             getPreferenceScreen().removePreference(findPreference(KEY_NAVIGATION_BAR));
+	    }
+
+	// Pie controls
+        mPieControl = (PreferenceScreen) findPreference(KEY_PIE_CONTROL);
+
+        }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        // All users
+        if (mNotificationPulse != null) {
+            updateLightPulseDescription();
+        }
+        if (mPieControl != null) {
+            updatePieControlDescription();
+        }
+
+        // Primary user only
+        if (mIsPrimary && mBatteryPulse != null) {
+            updateBatteryPulseDescription();
         }
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+
+    private void updateLightPulseDescription() {
+        if (Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.NOTIFICATION_LIGHT_PULSE, 0) == 1) {
+            mNotificationPulse.setSummary(getString(R.string.notification_light_enabled));
+        } else {
+            mNotificationPulse.setSummary(getString(R.string.notification_light_disabled));
+        }
+    }
+
+    private void updateBatteryPulseDescription() {
+        if (Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.BATTERY_LIGHT_ENABLED, 1) == 1) {
+            mBatteryPulse.setSummary(getString(R.string.notification_light_enabled));
+        } else {
+            mBatteryPulse.setSummary(getString(R.string.notification_light_disabled));
+        }
+     }
+
+    private void updatePieControlDescription() {
+        if (Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.PIE_CONTROLS, 0) == 1) {
+            mPieControl.setSummary(getString(R.string.pie_control_enabled));
+        } else {
+            mPieControl.setSummary(getString(R.string.pie_control_disabled));
+        }
+    }
+        
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mNavButtonsHeight) {
             int statusNavButtonsHeight = Integer.valueOf((String) objValue);
@@ -87,14 +165,22 @@ public class SystemSettings extends SettingsPreferenceFragment implements
         }
         return false;
     }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-    }
 }
+
+    //@Override
+    //public void onResume() {
+        //super.onResume();
+    //}
+
+    //@Override
+    //public void onPause() {
+        //super.onPause();
+
+    //private void updatePieControlDescription() {
+        //if (Settings.System.getInt(getActivity().getContentResolver(),
+                //Settings.System.PIE_CONTROLS, 0) == 1) {
+            //mPieControl.setSummary(getString(R.string.pie_control_enabled));
+        //} else {
+            //mPieControl.setSummary(getString(R.string.pie_control_disabled));
+    //}
+//}
