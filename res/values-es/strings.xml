@@ -2436,7 +2436,6 @@
     <string name="pie_control_title">PIE</string>
     <string name="pie_control_enabled">Disponible cuándo el escritorio esté expandido</string>
     <string name="pie_control_disabled">Desactivado</string>
-    <string name="pie_control_search_title">Mostrar el botón de búsqueda</string>
     <string name="pie_control_size">Tamaño de las teclas de navegación</string>
     <string name="pie_control_trigger_positions">Posición de los botones</string>
     <string name="pie_control_trigger_left">Parte izquierdo</string>
