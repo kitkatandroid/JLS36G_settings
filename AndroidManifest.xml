@@ -1611,6 +1611,8 @@
 
 	<activity android:name=".narp.KeyboardInputSettings" />
 
+	<activity android:name=".beanstalk.ExcludedAppsActivity" />
+
         <!-- CyanogenMod activities End -->
 
         <receiver android:name=".widget.SettingsAppWidgetProvider"

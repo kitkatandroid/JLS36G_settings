@@ -90,6 +90,11 @@
 
     </PreferenceCategory>
 
+    <PreferenceScreen
+        android:key="app_sidebar"
+        android:fragment="com.android.settings.beanstalk.AppSidebar"
+        android:title="@string/app_sidebar_title" />
+
     <!-- Active display -->
     <PreferenceScreen
         android:key="active_display"
