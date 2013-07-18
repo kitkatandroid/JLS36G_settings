@@ -2358,5 +2358,12 @@
     <!-- Keyboard and Input ASS methods  -->
     <string name="title_keyboard_input">Métodos de entrada y teclado</string>
     <string name="disable_fullscreen_keyboard_title">Deshabilitar teclado a pantalla completa</string>
-    <string name="disable_fullscreen_keyboard_summary">En modo apasaido el teclado no ocupará la pantalla completa</string> 
+    <string name="disable_fullscreen_keyboard_summary">En modo apasaido el teclado no ocupará la pantalla completa</string>
+ 
+    <!--  User Interface -->
+    <string name="user_interface_category_title">Interfaz del usuario</string>
+
+    <!-- Turn on display when power connected; turn off display when power disconnected -->
+    <string name="wake_when_plugged_or_unplugged_title">Despertar al conectar</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Enciende la pantalla cuándo conectamos o desconectamos el cargador</string>
 </resources>
