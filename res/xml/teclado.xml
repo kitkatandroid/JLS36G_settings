@@ -11,4 +11,9 @@
         android:summary="@string/disable_fullscreen_keyboard_summary"
         android:defaultValue="true" />
 
+<PreferenceScreen
+        android:key="user_interface"
+        android:fragment="com.android.settings.narp.UserInterfaceSettings"
+        android:title="@string/user_interface_category_title" />
+
 </PreferenceScreen>
