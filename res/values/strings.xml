@@ -4912,7 +4912,10 @@
     <string name="navigation_button_color_title">Navigation button color</string> 
     <string name="navigation_controls_title">Colors and glow</string> 
     <string name="navigation_button_glow_color_title">Navigation button glow color</string> 
-    <string name="navigation_button_glow_time_title">Navigation button glow time</string> 
+    <string name="navigation_button_glow_time_title">Navigation button glow time</string>
+
+    <!-- TRDS Settings -->
+    <string name="trds_settings_title">Dark mode</string> 
 
     <!-- **** PURITY ADDITIONS END **** -->
 
