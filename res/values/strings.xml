@@ -4815,6 +4815,8 @@
     <string name="navigation_bar_menu_editable">Editable</string>
     <string name="navigation_bar_menu_locked">Locked</string>
 
+    <string name="select_custom_app_title">Select custom app</string>
+
     <!-- **** PURITY ADDITIONS END **** -->
 
     <!-- HALO -->
