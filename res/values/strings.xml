@@ -4904,6 +4904,12 @@
     <string name="navring_action_google_now">Google Now</string>
     <string name="navring_choose_action_title">Choose action</string>
 
+    <!-- Navigation bar extra settings -->
+    <string name="navigation_button_color_title">Navigation button color</string> 
+    <string name="navigation_controls_title">Colors and glow</string> 
+    <string name="navigation_button_glow_color_title">Navigation button glow color</string> 
+    <string name="navigation_button_glow_time_title">Navigation button glow time</string> 
+
     <!-- **** PURITY ADDITIONS END **** -->
 
     <!-- HALO -->
