@@ -1103,8 +1103,6 @@
         <item>4</item>
     </string-array>
 
-    <!-- Verificare -->
-
     <string-array name="entries_screentimeout_widget">
         <item>15s/1m/5m</item>
         <item>30s/2m/5m</item>
