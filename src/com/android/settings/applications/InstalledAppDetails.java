@@ -1274,7 +1274,7 @@ public class InstalledAppDetails extends Fragment
     private void setNotificationsEnabled(boolean enabled) {
         try {
             final boolean enable = mNotificationSwitch.isChecked();
-            mNotificationManager.setNotificationsEnabledForPackage(mAppEntry.info.packageName, enabled);
+            mNotificationManager.setNotificationsEnabledForPackage(mAppEntry.info.packageName, mAppEntry.info.uid, enabled);
         } catch (android.os.RemoteException ex) {
             mNotificationSwitch.setChecked(!enabled); // revert
         }
