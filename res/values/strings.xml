@@ -4660,6 +4660,7 @@
     <string name="title_tile_usb_tether">USB Tether</string>
     <string name="title_tile_volume">Volume</string>
     <string name="title_tile_expanded_desktop">Expanded desktop</string>
+    <string name="title_tile_fcharge">Fast charge</string>  
 
     <string name="title_general">General</string>
     <string name="title_quick_pulldown">Quick pulldown</string>
