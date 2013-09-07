@@ -24,6 +24,7 @@ import static com.android.internal.util.cm.QSConstants.TILE_BLUETOOTH;
 import static com.android.internal.util.cm.QSConstants.TILE_BRIGHTNESS;
 import static com.android.internal.util.cm.QSConstants.TILE_CAMERA;
 import static com.android.internal.util.cm.QSConstants.TILE_DELIMITER;
+import static com.android.internal.util.cm.QSConstants.TILE_EXPANDEDDESKTOP;
 import static com.android.internal.util.cm.QSConstants.TILE_GPS;
 import static com.android.internal.util.cm.QSConstants.TILE_MOBILEDATA;
 import static com.android.internal.util.cm.QSConstants.TILE_NFC;
@@ -116,7 +117,10 @@ public class QuickSettingsUtil {
                 "com.android.systemui:drawable/ic_qs_wifi_ap_neutral"));
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_FCHARGE, R.string.title_tile_fcharge, 
-                "com.android.systemui:drawable/ic_qs_fcharge_off"));   
+                "com.android.systemui:drawable/ic_qs_fcharge_off"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_EXPANDEDDESKTOP, R.string.title_tile_expanded_desktop,
+                "com.android.systemui:drawable/ic_qs_expanded_desktop_off"));
     }
 
     private static void registerTile(QuickSettingsUtil.TileInfo info) {
@@ -172,6 +176,12 @@ public class QuickSettingsUtil {
     private static synchronized void refreshAvailableTiles(Context context) {
         ContentResolver resolver = context.getContentResolver();
 
+        // Don't show the Expanded desktop tile if expanded desktop is disabled
+        if (QSUtils.expandedDesktopEnabled(resolver)) {
+            enableTile(TILE_EXPANDEDDESKTOP);
+        } else {
+            disableTile(TILE_EXPANDEDDESKTOP);
+        }
     }
 
     public static synchronized void updateAvailableTiles(Context context) {
