@@ -4579,6 +4579,9 @@
     <string name="pref_volume_wake_summary">Pressing the volume rocker up/down will wake the device</string>
     <string name="volume_ring_only_description">Ringtone</string>
 
+    <string name="halo_enabled_title">Enable HALO</string>
+    <string name="halo_enabled_summary">Completely enable or disable HALO</string>
+
     <!-- Status bar  -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_clock_title">Clock</string>

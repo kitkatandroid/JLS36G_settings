@@ -2318,6 +2318,8 @@
     <string name="halo_state_summary">Para las notificaciones de lista negra/blanca ping a través de HALO</string>
     <string name="halo_state_black">Lista Negra</string>
     <string name="halo_state_white">Lista Blanda</string>
+    <string name="halo_enabled_title">Activar Halo</string>
+    <string name="halo_enabled_summary">Activar o desactivar Halo completamente</string>
 
     <!-- Halo size -->
     <string name="halo_size_title">Tamaño de HALO</string>
