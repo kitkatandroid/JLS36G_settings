@@ -5018,6 +5018,7 @@
     <string name="ad_pocket_mode_title">Pocket mode</string>
     <string name="ad_pocket_mode_summary">Show active display notifications when you take the device out of your pocket.</string>
     <string name="ad_redisplay_title">Redisplay notifications</string>
+
     <string name="ad_brightness_title">Notification brightness</string>
     <string name="ad_brightness_summary">Brightness level for displaying notifications when automatic brightness is not enabled.</string>
     <string name="ad_redisplay_never">Never</string>
@@ -5071,4 +5072,8 @@
     <!-- Status bar notification count -->  
     <string name="status_bar_notif_count_title">Show notification count</string>  
     <string name="status_bar_notif_count_summary">Display number of pending notifications on the status bar</string>
+
+    <!-- Chameleon OS -->
+    <string name="ad_sunlight_mode_title">Sunlight mode</string>
+    <string name="ad_sunlight_mode_summary">Invert the colors when in areas with bright light such as direct sunlight.</string>
 </resources>
