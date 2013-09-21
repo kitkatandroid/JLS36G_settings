@@ -81,4 +81,11 @@
         <attr name="fillColor" format="color" />
         <attr name="fillColorSecondary" format="color" />
     </declare-styleable>
+
+    <declare-styleable name="SeekBarPreference">
+        <attr name="unitsLeft" format="string" />
+	<attr name="min" format="integer" />
+        <attr name="unitsRight" format="string" />
+     </declare-styleable>
+
 </resources>

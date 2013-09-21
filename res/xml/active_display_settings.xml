@@ -54,7 +54,7 @@
         android:entryValues="@array/ad_redisplay_values"
         android:dependency="ad_enable"/>
 
-    <com.android.settings.chameleonos.SeekBarPreference
+    <com.android.settings.beanstalk.SeekBarPreference
         android:key="ad_brightness"
         android:persistent="false"
         android:title="@string/ad_brightness_title"
