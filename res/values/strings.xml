@@ -4539,7 +4539,7 @@
     <!-- **** PURITY ADDITIONS START **** -->
 
     <!-- Build date -->
-    <string name="build_date">Purity build date</string>
+    <string name="build_date">NARP Build Date</string>
     <string name="build_date_default">2012-01-01-0000</string>
 
     <!-- **** PURITY ADDITIONS END **** -->
