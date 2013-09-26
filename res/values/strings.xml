@@ -4563,7 +4563,7 @@
     <string name="power_menu_silent_title">Sound panel</string>
 
     <!-- Purity Category  -->
-    <string name="purity_category_title">NARP</string>
+    <string name="purity_category_title">NARP AOSP</string>
 
     <!-- Sound settings screen -->
     <string name="volume_overlay_title">Volume panel style</string>
