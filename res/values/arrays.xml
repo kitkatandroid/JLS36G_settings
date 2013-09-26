@@ -917,7 +917,6 @@
         <item>Always allow</item>
     </string-array>
 
-<<<<<<< HEAD
     <string-array name="entries_halo_state">
         <item>@string/halo_state_black</item>
         <item>@string/halo_state_white</item>
