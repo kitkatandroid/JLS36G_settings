@@ -1914,4 +1914,8 @@
     <!-- System Interface settings  -->
     <string name="system_settings_title">Opciones NARP</string>
     <string name="system_interface_title">Interfaz del sistema</string>
+    <string name="trds_settings_title">Modo oscuro</string>
+    <string name="status_bar_title">Barra de estado</string>
+    <string name="quick_settings_panel_title">Toggles</string>
+    <string name="quick_settings_title">Toggles</string>
 </resources>
