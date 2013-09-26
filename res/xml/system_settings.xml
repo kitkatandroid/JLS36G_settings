@@ -27,6 +27,7 @@
 	<PreferenceScreen
             android:key="halo_control"
             android:fragment="com.android.settings.narp.HaloControl"
+	    android:icon="@drawable/ic_settings_halo"
             android:title="@string/halo_control_title" />
 
 </PreferenceScreen>

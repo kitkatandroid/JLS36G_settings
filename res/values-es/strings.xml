@@ -1910,4 +1910,8 @@
     <string name="build_date_default">2012-01-01-0000</string>
 
     <!-- **** PURITY ADDITIONS END **** -->
+
+    <!-- System Interface settings  -->
+    <string name="system_settings_title">Opciones NARP</string>
+    <string name="system_interface_title">Interfaz del sistema</string>
 </resources>

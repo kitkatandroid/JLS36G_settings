@@ -4546,7 +4546,7 @@
     <string name="build_date_default">2012-01-01-0000</string>
 
     <!-- System Interface settings  -->
-    <string name="system_settings_title">System</string>
+    <string name="system_settings_title">NARP Options</string>
     <string name="system_interface_title">System interface</string>
 
     <!-- Power menu enable disable -->
@@ -4563,7 +4563,7 @@
     <!-- **** PURITY ADDITIONS END **** -->
 
     <!-- HALO -->
-    <string name="halo_control_title">HALO options</string>
+    <string name="halo_control_title">HALO</string>
     <string name="halo_hide_title">Hide HALO after activity</string>
     <string name="halo_hide_summary">HALO will appear for incoming tasks and scroll out of sight after a while</string>
     <string name="halo_reversed_title">Reverse HALO gestures</string>
