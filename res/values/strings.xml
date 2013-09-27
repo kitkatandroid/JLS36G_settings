@@ -4767,6 +4767,8 @@
     <!-- Add application dialog box title -->
     <string name="profile_choose_app">Choose application</string>
 
+    <string name="ad_hide_low_priority_title">Hide low priority</string>
+    <string name="ad_hide_low_priority_summary">Hide low priority notifications such as those from Google Now.</string>
     <string name="ad_timeout_title">Display timeout</string>
     <string name="ad_timeout_3s">3 seconds</string>
     <string name="ad_timeout_5s">5 seconds</string>
