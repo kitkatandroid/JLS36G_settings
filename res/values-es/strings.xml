@@ -1990,7 +1990,7 @@
     <string name="header_summary_clock">Localización del reloj, Estilo AM/PM, fecha</string>
     <string name="header_summary_clock_tablet">Mostrar/ocultar reloj, Estilo AM/PM</string>
     <string name="title_statusbar_clock">Reloj de la barra de estado</string>
-    <string name="clock_title_enable">Estilo del relok</string>
+    <string name="clock_title_enable">Estilo del reloj</string>
     <string name="title_clock_ampm_entries">Estilo AM/PM</string>
     <string name="enable_clock_weekday">Día de la semana</string>
     <string name="enable_clock_weekday_summary">Abreviado día de la semana antes de la hora</string>
