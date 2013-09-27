@@ -2080,7 +2080,6 @@
     <string name="volume_key_cursor_control_on_reverse">Volume arriba/abajo mueve el cursor derecha/izquierda</string>
 
     <!-- Display settings screen, notification light settings -->
-    <string name="notification_pulse_title">Luz de notificación</string>
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_applist_title">Aplicaciones</string>
     <string name="notification_light_phonelist_title">Teléfono</string>
