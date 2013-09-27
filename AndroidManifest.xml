@@ -1609,6 +1609,8 @@
 
         <activity android:name=".notificationlight.BatteryLightSettings" />
 
+	<activity android:name=".narp.KeyboardInputSettings" />
+
         <!-- CyanogenMod activities End -->
 
         <receiver android:name=".widget.SettingsAppWidgetProvider"

@@ -49,6 +49,12 @@
 	android:icon="@drawable/ic_settings_halo"
         android:title="@string/halo_control_title" />
 
+    <PreferenceScreen
+        android:key="teclado"
+        android:fragment="com.android.settings.narp.KeyboardInputSettings"
+	android:icon="@drawable/ic_extras"
+        android:title="@string/extras" /> 
+
     <PreferenceCategory
         android:key="navigation_bar"
         android:title="@string/navigation_bar_title">
