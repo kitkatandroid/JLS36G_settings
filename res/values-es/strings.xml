@@ -2405,4 +2405,8 @@
     <string name="listview_overshoot_interpolator">exceder_interpolador</string>
     <string name="listview_anticipate_overshoot_interpolator">anticipar_exceder_interpolador</string>
     <string name="listview_bounce_interpolator">rebotar_interpolador</string>
+
+    <!-- Status bar notification count -->  
+    <string name="status_bar_notif_count_title">Mostrar contador de notificaciones</string>  
+    <string name="status_bar_notif_count_summary">Mostrar número de notificaciones pendientes en la barra de estado</string>
 </resources>
