@@ -43,6 +43,8 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private static final String STATUS_BAR_AUTO_HIDE = "status_bar_auto_hide";
     private static final String STATUS_BAR_QUICK_PEEK = "status_bar_quick_peek";
     private static final String STATUS_BAR_CATEGORY_GENERAL = "status_bar_general";
+    public static final String KEY_SHOW_CLOCK = "show_clock";
+    public static final String KEY_STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";  
     private static final String PREF_BATT_BAR = "battery_bar_list";
     private static final String PREF_BATT_BAR_STYLE = "battery_bar_style";
     private static final String PREF_BATT_BAR_COLOR = "battery_bar_color";
@@ -61,6 +63,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private ListPreference mBatteryBarThickness;
     private CheckBoxPreference mBatteryBarChargingAnimation;
     private PreferenceCategory mPrefCategoryGeneral;
+    private CheckBoxPreference mStatusBarNotifCount;
     private ColorPickerPreference mBatteryBarColor;
     private CheckBoxPreference mBattText;
     private CheckBoxPreference mStatusBarBrightnessControl;
@@ -97,6 +100,10 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         mStatusBarBattery = (ListPreference) prefSet.findPreference(STATUS_BAR_BATTERY);
         mStatusBarCmSignal = (ListPreference) prefSet.findPreference(STATUS_BAR_SIGNAL);
         mStatusBarBrightnessControl = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_BRIGHTNESS_CONTROL);
+
+	mStatusBarNotifCount = (CheckBoxPreference) prefSet.findPreference(KEY_STATUS_BAR_NOTIF_COUNT);
+        mStatusBarNotifCount.setChecked(Settings.System.getInt(getActivity().getContentResolver(), 
+                Settings.System.STATUS_BAR_NOTIF_COUNT, 0) == 1); 
 	
 	mBattText = (CheckBoxPreference) prefSet.findPreference(BATTERY_TEXT);
 	mBattText.setChecked(Settings.System.getInt(getContentResolver(),
@@ -205,6 +212,10 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUSBAR_CLOCK_STYLE, val);
 	    return true;
+	} else if (preference == mStatusBarNotifCount) {  
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.STATUS_BAR_NOTIF_COUNT,  mStatusBarNotifCount.isChecked()
+                    ? 1 : 0); 
         } else if (preference == mClockWeekday) {
             int val = Integer.parseInt((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),
