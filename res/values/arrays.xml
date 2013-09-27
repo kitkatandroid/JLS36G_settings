@@ -1311,7 +1311,6 @@
         <item>@string/navigation_bar_height_24</item>
     </string-array>
 
-<<<<<<< HEAD
     <string-array name="nav_buttons_height_values" translatable="false">
         <item>52</item>
         <item>50</item>
