@@ -2354,4 +2354,9 @@
     <string name="themes_settings_title">Temas</string>
 
     <!-- **** PURITY ADDITIONS END **** -->
+
+    <!-- Keyboard and Input ASS methods  -->
+    <string name="title_keyboard_input">Métodos de entrada y teclado</string>
+    <string name="disable_fullscreen_keyboard_title">Deshabilitar teclado a pantalla completa</string>
+    <string name="disable_fullscreen_keyboard_summary">En modo apasaido el teclado no ocupará la pantalla completa</string> 
 </resources>
