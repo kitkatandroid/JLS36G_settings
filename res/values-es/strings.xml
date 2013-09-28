@@ -2350,9 +2350,6 @@
     <string name="halo_msgbox_animation_none">Nada</string>
     <string name="halo_msgbox_animation_flip">Flip</string>
 
-    <!-- Themes settings  -->
-    <string name="themes_settings_title">Temas</string>
-
     <!-- **** PURITY ADDITIONS END **** -->
 
     <!-- Keyboard and Input ASS methods  -->
