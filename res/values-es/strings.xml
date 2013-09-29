@@ -1914,26 +1914,15 @@
     <string name="system_interface_title">Interfaz del Sistema</string>
 
     <!-- Power menu enable disable -->
-<<<<<<< HEAD
-    <string name="power_menu_title">Menú Power</string>
-    <string name="power_menu_reboot_title">Menú de Reinicio</string>
-    <string name="power_menu_screenshot_title">Captura de Pantalla</string>
-    <string name="power_menu_expanded_desktop">Escritorio Expandido</string>
-=======
     <string name="power_menu_title">Menú de encendido</string>
     <string name="power_menu_reboot_title">Menú de reinicio</string>
     <string name="power_menu_screenshot_title">Captura de pantalla</string>
     <string name="power_menu_expanded_desktop">Escritorio expandido</string>
->>>>>>> db644e66ba5761087ff8ddc45a34a81592bd36ae
     <string name="expanded_desktop_disabled">Deshabilitado</string>
     <string name="expanded_desktop_status_bar">Barra de estado visible</string>
     <string name="expanded_desktop_no_status_bar">Barra de estado oculta</string>
     <string name="power_menu_airplane_title">Modo avión</string>
-<<<<<<< HEAD
-    <string name="power_menu_silent_title">Panel de Sonido</string>
-=======
     <string name="power_menu_silent_title">Panel de sonido</string>
->>>>>>> db644e66ba5761087ff8ddc45a34a81592bd36ae
 
     <!-- Purity Category  -->
     <string name="purity_category_title">NARP AOSP</string>
@@ -1948,15 +1937,9 @@
 
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Opciones de despertares</string>
-<<<<<<< HEAD
-    <string name="pref_volume_wake_title">Volume ROCK!</string>
-    <string name="pref_volume_wake_summary">Presionando las teclas de volumen, activamos la pantalla</string>
-    <string name="volume_ring_only_description">Tono de Llamada</string>
-=======
     <string name="pref_volume_wake_title">Volume Rocker Wake</string>
     <string name="pref_volume_wake_summary">Presionando las teclas de volumen, encendemos la pantalla</string>
     <string name="volume_ring_only_description">Tono de llamada</string>
->>>>>>> db644e66ba5761087ff8ddc45a34a81592bd36ae
 
     <!-- Status bar  -->
     <string name="status_bar_title">Barra de estado</string>
@@ -1993,13 +1976,8 @@
     <string name="battery_text_low">Color de la batería (inferior al 15%)</string>
 
     <!-- Color picker -->
-<<<<<<< HEAD
-    <string name="dialog_color_picker">Selector de Color</string>
-    <string name="press_color_to_apply">Presiona en un color para aplicarlo</string>
-=======
     <string name="dialog_color_picker">Selector de color</string>
     <string name="press_color_to_apply">Presiona un color para aplicarlo</string>
->>>>>>> db644e66ba5761087ff8ddc45a34a81592bd36ae
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
@@ -2009,13 +1987,8 @@
 
     <!-- Clock Options -->
     <string name="clock">Reloj</string>
-<<<<<<< HEAD
-    <string name="header_summary_clock">Localización del reloj, Estilo AM/PM, fecha</string>
-    <string name="header_summary_clock_tablet">Mostrar/ocultar reloj, Estilo AM/PM</string>
-=======
     <string name="header_summary_clock">Posición del reloj, estilo AM/PM, fecha...</string>
     <string name="header_summary_clock_tablet">Mostrar/ocultar reloj, estilo AM/PM</string>
->>>>>>> db644e66ba5761087ff8ddc45a34a81592bd36ae
     <string name="title_statusbar_clock">Reloj de la barra de estado</string>
     <string name="clock_title_enable">Estilo del reloj</string>
     <string name="title_clock_ampm_entries">Estilo AM/PM</string>
@@ -2023,31 +1996,18 @@
     <string name="enable_clock_weekday_summary">Abreviado día de la semana antes de la hora</string>
 
     <!-- Quick settings panel  -->
-<<<<<<< HEAD
-    <string name="quick_settings_panel_title">Opciones Rápidas</string>
-    <string name="quick_settings_title">Opciones Rápidas</string>
-=======
     <string name="quick_settings_panel_title">Opciones rápidas</string>
     <string name="quick_settings_title">Opciones rápidas</string>
->>>>>>> db644e66ba5761087ff8ddc45a34a81592bd36ae
     <string name="title_static_tiles">Toggles fijos</string>
     <string name="tile_picker_title">Toggles y diseño</string>
     <string name="tile_picker_summary">Ver, seleccionar o cambiar el diseño de los toggles mostrados</string>
     <string name="tile_choose_title">Seleccione un toggle</string>
-<<<<<<< HEAD
-    <string name="title_tile_camera">Camara</string>
-=======
     <string name="title_tile_camera">Cámara</string>
->>>>>>> db644e66ba5761087ff8ddc45a34a81592bd36ae
     <string name="title_tile_airplane">Modo Avión</string>
     <string name="title_tile_battery">Estadísticas de la batería</string>
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Brillo</string>
-<<<<<<< HEAD
-    <string name="title_tile_power">Power</string>
-=======
     <string name="title_tile_power">Encendido</string>
->>>>>>> db644e66ba5761087ff8ddc45a34a81592bd36ae
     <string name="title_tile_gps">GPS</string>
     <string name="title_tile_torch">Linterna</string>
     <string name="title_tile_mobiledata">Datos móviles</string>
@@ -2059,15 +2019,6 @@
     <string name="title_tile_wifi">Wi-Fi</string>
     <string name="title_tile_user">Cambiar de usuario</string>
     <string name="title_tile_nfc">NFC</string>
-<<<<<<< HEAD
-    <string name="title_tile_usb_tether">USB Tether</string>
-    <string name="title_tile_volume">Volumen</string>
-    <string name="title_tile_expanded_desktop">Escritorio Expandido</string>
-    <string name="title_tile_fcharge">Carga rápida</string>  
-
-    <string name="title_general">General</string>
-    <string name="title_quick_pulldown">Ajustes de Cortina</string>
-=======
     <string name="title_tile_usb_tether">USB tether</string>
     <string name="title_tile_volume">Volumen</string>
     <string name="title_tile_expanded_desktop">Escritorio expandido</string>
@@ -2075,7 +2026,6 @@
 
     <string name="title_general">General</string>
     <string name="title_quick_pulldown">Ajustes de cortina</string>
->>>>>>> db644e66ba5761087ff8ddc45a34a81592bd36ae
     <string name="summary_quick_pulldown">%1$s lado de la barra de estado para los ajustes de cortina</string>
     <string name="quick_pulldown_summary_left">Izquierda</string>
     <string name="quick_pulldown_summary_right">Derecha</string>
@@ -2088,21 +2038,6 @@
     <string name="dynamic_tiles_note_title">Nota</string>
     <string name="dynamic_tiles_note_summary">Los toggles dinámicos no se mostrarán siempre, solo se hará cuándo el sistema lo considere</string>
     <string name="title_dynamic_alarm">Alarma</string>
-<<<<<<< HEAD
-    <string name="title_dynamic_bugreport">Reportar Error</string>
-    <string name="title_dynamic_dock_battery">Dock battery</string>
-    <string name="title_dynamic_ime">Cambiador IME</string>
-    <string name="title_dynamic_usbtether">USB Tether</string>
-    <string name="title_dynamic_wifi">Pantalla Wi-Fi</string>
-    <string name="pref_screentimeout_mode_title">Modos del tiempo de espera en la pantalla</string>
-    <string name="pref_ring_mode_title">Modos de sonido</string>
-    <string name="pref_ring_mode_summary">Ver o cambiar los modos de botón Sonido</string>
-
-    <!-- Reset Profiles -->
-    <string name="profile_reset_title">Reiniciar</string>
-    <string name="profile_reset_message">Borrar todos los perfiles de  usuarios creados y grupo de aplicaciones y restaurarlas por defecto?</string>
-    <string name="profiles_add">Añador</string>
-=======
     <string name="title_dynamic_bugreport">Reportar error</string>
     <string name="title_dynamic_dock_battery">Dock battery</string>
     <string name="title_dynamic_ime">Cambiador IME</string>
@@ -2116,7 +2051,6 @@
     <string name="profile_reset_title">Reiniciar</string>
     <string name="profile_reset_message">Borrar todos los perfiles de usuarios creados, grupos de aplicaciones y restaurarlos por defecto?</string>
     <string name="profiles_add">Añadir</string>
->>>>>>> db644e66ba5761087ff8ddc45a34a81592bd36ae
     <string name="profile_applist_title">Aplicaciones</string>
 
     <!-- Reset tiles -->
@@ -2142,13 +2076,8 @@
     <!--- Volume key cursor control -->
     <string name="volume_key_cursor_control_title">Teclas de volumen como cursor</string>
     <string name="volume_key_cursor_control_off">Deshabilitado</string>
-<<<<<<< HEAD
-    <string name="volume_key_cursor_control_on">Volumen arriba/abajo mueve el cursor izquierda/derecha</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume arriba/abajo mueve el cursor derecha/izquierda</string>
-=======
     <string name="volume_key_cursor_control_on">Volumen arriba/abajo mueven el cursor izquierda/derecha</string>
     <string name="volume_key_cursor_control_on_reverse">Volumen arriba/abajo mueven el cursor derecha/izquierda</string>
->>>>>>> db644e66ba5761087ff8ddc45a34a81592bd36ae
 
     <!-- Display settings screen, notification light settings -->
     <string name="notification_light_general_title">General</string>
