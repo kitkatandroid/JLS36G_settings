@@ -22,7 +22,6 @@ import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.preference.ListPreference;
 import android.preference.Preference;
-import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.view.IWindowManager;
@@ -38,17 +37,14 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     private static final String KEY_NAVIGATION_BAR = "navigation_bar";
     private static final String KEY_NAV_BUTTONS_EDIT = "nav_buttons_edit";
     private static final String KEY_NAV_BUTTONS_HEIGHT = "nav_buttons_height";
-    private static final String KEY_PIE_CONTROL = "pie_control";
 
     private ListPreference mNavButtonsHeight;
-    private PreferenceScreen mPieControl;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system_settings);
-	PreferenceScreen prefScreen = getPreferenceScreen();
 
         mNavButtonsHeight = (ListPreference) findPreference(KEY_NAV_BUTTONS_HEIGHT);
         mNavButtonsHeight.setOnPreferenceChangeListener(this);
@@ -77,9 +73,6 @@ public class SystemSettings extends SettingsPreferenceFragment implements
         // Act on the above
         if (removeNavbar) {
             getPreferenceScreen().removePreference(findPreference(KEY_NAVIGATION_BAR));
-
-        // Pie controls
-        mPieControl = (PreferenceScreen) findPreference(KEY_PIE_CONTROL);
         }
     }
 
@@ -103,14 +96,5 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     @Override
     public void onPause() {
         super.onPause();
-    }
-
-    private void updatePieControlDescription() {
-        if (Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.PIE_CONTROLS, 0) == 1) {
-            mPieControl.setSummary(getString(R.string.pie_control_enabled));
-        } else {
-            mPieControl.setSummary(getString(R.string.pie_control_disabled));
-        }
     }
 }
