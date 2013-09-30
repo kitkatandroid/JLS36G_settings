@@ -40,8 +40,11 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     private static final String KEY_NAV_BUTTONS_HEIGHT = "nav_buttons_height";
     private static final String KEY_PIE_CONTROL = "pie_control";
 
+    private PreferenceScreen mNotificationPulse;
     private ListPreference mNavButtonsHeight;
+    private PreferenceScreen mBatteryPulse;
     private PreferenceScreen mPieControl;
+    private boolean mIsPrimary;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -98,12 +101,43 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     @Override
     public void onResume() {
         super.onResume();
+
+        // All users
+        if (mNotificationPulse != null) {
+            updateLightPulseDescription();
+        }
+        if (mPieControl != null) {
+            updatePieControlDescription();
+        }
+
+        // Primary user only
+        if (mIsPrimary && mBatteryPulse != null) {
+            updateBatteryPulseDescription();
+        }
     }
 
     @Override
     public void onPause() {
         super.onPause();
     }
+
+    private void updateLightPulseDescription() {
+        if (Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.NOTIFICATION_LIGHT_PULSE, 0) == 1) {
+            mNotificationPulse.setSummary(getString(R.string.notification_light_enabled));
+        } else {
+            mNotificationPulse.setSummary(getString(R.string.notification_light_disabled));
+        }
+    }
+
+    private void updateBatteryPulseDescription() {
+        if (Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.BATTERY_LIGHT_ENABLED, 1) == 1) {
+            mBatteryPulse.setSummary(getString(R.string.notification_light_enabled));
+        } else {
+            mBatteryPulse.setSummary(getString(R.string.notification_light_disabled));
+        }
+     }
 
     private void updatePieControlDescription() {
         if (Settings.System.getInt(getActivity().getContentResolver(),
