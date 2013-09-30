@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 
 <PreferenceScreen
@@ -53,20 +52,4 @@
         android:dependency="power_notifications"
         android:persistent="false" />
 
-=======
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <PreferenceCategory
-        android:key="misc"
-        android:title="@string/misc_short">
-
-        <Preference
-            android:key="lcd_density_setup"
-            android:title="@string/lcd_density_title"
-            android:summary="@string/lcd_density_summary" />
-
-    </PreferenceCategory>
->>>>>>> 7a2761f... LCD Changer take 2
 </PreferenceScreen>
