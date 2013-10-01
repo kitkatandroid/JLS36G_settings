@@ -5003,11 +5003,6 @@
     <!-- Themes settings  -->
     <string name="themes_settings_title">Themes</string>
 
-    <string name="custom_carrier_label_title">Custom carrier label</string>
-    <string name="custom_carrier_label_summary">Modify the carrier label</string>
-    <string name="custom_carrier_label_explain">Specify the carrier label or leave it blank.</string>
-    <string name="custom_carrier_label_notset">Carrier label not specified</string>
-
     <!-- Keyboard and Input ASS methods  -->
     <string name="extras">Extras</string>
     <string name="title_keyboard_input">Keyboard and input methods</string>
