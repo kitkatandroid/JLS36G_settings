@@ -8,13 +8,19 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Date;
 import java.util.Properties;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.text.format.DateFormat;
 import android.util.Log;
 import android.widget.Toast;
+
+import com.android.settings.util.CMDProcessor.CommandResult;
 
 public class Helpers {
 
@@ -94,7 +100,7 @@ public class Helpers {
         }
         return null;
     }
-    
+
     public static boolean getMount(final String mount)
     {
         final CMDProcessor cmd = new CMDProcessor();
@@ -112,7 +118,7 @@ public class Helpers {
         }
         return ( cmd.su.runWaitFor("busybox mount -o remount," + mount + " /system").success() );
     }
-    
+
     public static String getFile(final String filename) {
         String s = "";
         final File f = new File(filename);
@@ -134,7 +140,7 @@ public class Helpers {
         }
         return s;
     }
-    
+
     public static void writeNewFile(String filePath, String fileContents) {
         File f = new File(filePath);
         if (f.exists()) {
@@ -152,7 +158,7 @@ public class Helpers {
             Log.d( TAG, "Failed to create " + filePath + " File contents: " + fileContents);
         }
     }
-    
+
     /**
 * Long toast message
 *
@@ -188,7 +194,24 @@ public class Helpers {
             msgLong(c, msg);
         }
     }
-    
+
+    /**
+* Return a timestamp
+*
+* @param c Application Context
+*/
+    public static String getTimestamp(final Context context) {
+        String timestamp;
+        timestamp = "unknown";
+        Date now = new Date();
+        java.text.DateFormat dateFormat = android.text.format.DateFormat.getDateFormat(context);
+        java.text.DateFormat timeFormat = android.text.format.DateFormat.getTimeFormat(context);
+        if(dateFormat != null && timeFormat != null) {
+            timestamp = dateFormat.format(now) + " " + timeFormat.format(now);
+        }
+        return timestamp;
+    }
+
     public static boolean isPackageInstalled(final String packageName,
             final PackageManager pm)
     {
@@ -203,6 +226,29 @@ public class Helpers {
         }
         return true;
     }
+
+    public static void restartSystemUI() {
+        new CMDProcessor().su.run("pkill -TERM -f com.android.systemui");
+    }
+
+    public static void setSystemProp(String prop, String val) {
+        new CMDProcessor().su.run("setprop " + prop + " " + val);
+    }
+
+    public static String getSystemProp(String prop, String def) {
+        String result = getSystemProp(prop);
+        return result == null ? def : result;
+    }
+
+    private static String getSystemProp(String prop) {
+        CommandResult cr = new CMDProcessor().sh.runWaitFor("getprop " + prop);
+        if (cr.success()) {
+            return cr.stdout;
+        } else {
+            return null;
+        }
+    }
+
     /*
 * Mount System partition
 *

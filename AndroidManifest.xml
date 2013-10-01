@@ -1613,8 +1613,6 @@
 
 	<activity android:name=".beanstalk.ExcludedAppsActivity" />
 
-	<activity android:name=".util.ShowBuildProp" /> 
-
         <!-- CyanogenMod activities End -->
 
         <receiver android:name=".widget.SettingsAppWidgetProvider"
