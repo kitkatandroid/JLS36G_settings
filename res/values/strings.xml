@@ -5000,6 +5000,9 @@
     <string name="halo_msgbox_animation_none">None</string>
     <string name="halo_msgbox_animation_flip">Flip</string>
 
+    <!-- Themes settings  -->
+    <string name="themes_settings_title">Themes</string>
+
     <!-- Keyboard and Input ASS methods  -->
     <string name="extras">Extras</string>
     <string name="title_keyboard_input">Keyboard and input methods</string>
@@ -5146,7 +5149,4 @@
     <string name="active_display_sidebar">Active Display and Sidebar App</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
-    
-    <!-- Themes settings  -->
-    <string name="themes_settings_title">Themes</string>
 </resources>
