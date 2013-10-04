@@ -95,6 +95,20 @@
             android:entryValues="@array/values_system_power_crt_mode"
             android:dependency="system_power_crt_screen_off" />
 
-    </PreferenceCategory>
+
+        <!-- Sidebar -->
+        <PreferenceScreen
+        android:key="app_sidebar"
+        android:fragment="com.android.settings.beanstalk.AppSidebar"
+        android:title="@string/app_sidebar_title" />
+
+    <!-- Active display -->
+    <PreferenceScreen
+        android:key="active_display"
+        android:fragment="com.android.settings.beanstalk.ActiveDisplaySettings"
+        android:title="@string/ad_settings_title"
+        android:summary="@string/ad_settings_summary">
+	</PreferenceScreen>
+	</PreferenceCategory>
 
 </PreferenceScreen>

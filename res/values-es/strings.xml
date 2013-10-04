@@ -2415,7 +2415,7 @@
     <string name="ad_sunlight_mode_summary">Invertir los colores en áreas con luz brillante como la luz solar directa</string>
 
     <!-- App sidebar -->
-    <string name="app_sidebar_title">Sidebar App</string>
+    <string name="app_sidebar_title">Sidebar</string>
     <string name="app_sidebar_enable_title">Habilitar Sidebar</string>
     <string name="app_sidebar_sort_type_title">Orden de clasificación Sidebar</string>
     <string name="app_sidebar_transparency_title">Transparencia Sidebar</string>
@@ -2424,4 +2424,51 @@
     <string name="app_sidebar_exclude_list_summary">Selecciona las aplicaciones a explicar desde Sidebar</string>
     <string name="excluded_apps_title">Apps excluidas</string>
     <string name="menu_excluded_apps_delete">Restaurar</string>
+
+    <!-- stylus gestures support -->
+    <string name="stylus_app_not_installed">%s no es instalado</string>
+    
+    <string name="perf_info">Información General</string>
+    <string name="cpu_info">Modelo CPU</string>
+    <string name="mem_info">RAM (Total)</string>
+
+    <!-- Quick/Pie Control #CM -->
+    <string name="pie_control_title">PIE</string>
+    <string name="pie_control_enabled">Disponible cuándo el escritorio esté expandido</string>
+    <string name="pie_control_disabled">Desactivado</string>
+    <string name="pie_control_search_title">Mostrar el botón de búsqueda</string>
+    <string name="pie_control_size">Tamaño de las teclas de navegación</string>
+    <string name="pie_control_trigger_positions">Posición de los botones</string>
+    <string name="pie_control_trigger_left">Parte izquierdo</string>
+    <string name="pie_control_trigger_bottom">Parte de abajo</string>
+    <string name="pie_control_trigger_right">Parte derecha</string>
+    <string name="pie_control_trigger_top">Parte de arriba</string>
+    <string name="pie_control_trigger_top_summary">Solo la navegación se mostrará en la parte de arriba</string>
+
+    <string name="ad_settings_title">Pantalla activa</string>
+    <string name="ad_settings_summary">Cambiar la configuración de la Pantalla activa</string>
+    <string name="ad_enable_title">Activado</string>
+    <string name="ad_enable_summary_on">Pantalla activa habilitada</string>
+    <string name="ad_enable_summary_off">Pantalla activa desactivada</string>
+    <string name="ad_text_title">Texto de la notificación</string>
+    <string name="ad_text_summary">Mostrar la notificación alrededor del anillo de bloqueo</string>
+    <string name="ad_all_notifications_title">Todas las notificaciones</string>
+    <string name="ad_all_notifications_summary">Mostrar todas las notificaciones incluyendo las actuales, no suprimir las notificaciones</string>
+    <string name="ad_pocket_mode_title">Modo bolsillo</string>
+    <string name="ad_pocket_mode_summary">Mostrar la en la pantalla las notificaciones cuándo saques tu teléfono del bolsillo</string>
+    <string name="ad_redisplay_title">Volver a mostrar las notificaciones</string>
+
+    <string name="ad_brightness_title">Brillo de las notificaciones</string>
+    <string name="ad_brightness_summary">Ajuste el nivel de brillo de las notificaciones cuándo no esté activada la función de brillo automático</string>
+    <string name="ad_redisplay_never">Nunca</string>
+    <string name="ad_redisplay_1m">1 minuto</string>
+    <string name="ad_redisplay_5m">5 minutos</string>
+    <string name="ad_redisplay_15m">15 minutos</string>
+    <string name="ad_redisplay_30m">30 minutos</string>
+    <string name="ad_redisplay_1h">1 hora</string>
+    <string name="ad_redisplay_2h">2 horas</string>
+    <string name="ad_redisplay_5h">5 horas</string>
+
+    <!-- Active Display && Sidebar -->
+    <string name="active_display_sidebar">Pantalla activa y Sidebar</string>
 </resources>

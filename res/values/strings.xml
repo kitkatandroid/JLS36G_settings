@@ -4944,7 +4944,7 @@
     <string name="system_power_crt_mode_horizontal">Portrait horizontal</string>
     <string name="system_power_crt_mode_vertical">Portrait vertical</string>
     <string name="system_power_crt_mode_both">Orientation dependent</string>
-    <string name="display_category_animation_options_title">Animation</string>
+    <string name="display_category_animation_options_title">Animation with Display active and Sidebar</string>
 
     <!-- Safe headset volume restore checkbox --> 
     <string name="safe_headset_volume_title">Safe headset volume</string> 
@@ -5145,6 +5145,9 @@
     <string name="pie_control_trigger_right">Right screen border</string>
     <string name="pie_control_trigger_top">Top screen border</string>
     <string name="pie_control_trigger_top_summary">Only navigation will be displayed at top</string>
+
+    <!-- Active Display && Sidebar -->
+    <string name="active_display_sidebar">Active Display and Sidebar App</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 </resources>
